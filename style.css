@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: #fff;
+    color: #000;
+}
+
+body {
+    height: 100vh;
+    line-height: 1;
+    background: #000;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.animation-area {
+    margin-right: 15vw;
+    padding-top: 50px;
+    padding-left: 80px;
+    text-align: right;
+    overflow: hidden;
+}
+
+.main-text h2 {
+    font-size: 80px;
+    color: #fff;
+}
+
+.first-line {
+    animation: anim1 2.5s ease-out infinite;
+    position: relative;
+}
+
+.second-line {
+    animation: anim2 2.5s ease-out infinite;
+    position: relative;
+    
+}
+
+.third-line {
+    animation: anim3 2.5s ease-out infinite;
+    position: relative;
+    
+}
+
+@keyframes anim1 {
+   0% {right: -1000px; top:0px}
+   30% {right: 40px; top: 0px}
+   40% {right: 0px; top:0px}
+   60% {right: 0px; top: 0px}
+   100% { right: 0px; top:-10px; }
+}
+
+@keyframes anim2 {
+   0% {right: -1000px; top:0px}
+   40% {right: 40px; top: 0px}
+   50% {right: 0px; top:0px}
+   70% {right: 0px; top: 0px}
+   100% { right: 0px; top:-10px; }
+}
+
+@keyframes anim3 {
+   0% {right: -1000px; top:0px}
+   50% {right: 40px; top: 0px}
+   60% {right: 0px; top:0px}
+   80% {right: 0px; top: 0px}
+   100% { right: 0px; top:-10px; }
+}
+
+@media only screen and (max-width: 1199px) {
+    .animation-area {
+        margin-right: 10vw;
+    }
+
+    .main-text h2 {
+        font-size: 64px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .main-text h2 {
+        font-size: 56px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-text h2 {
+        font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .main-text h2 {
+        font-size: 30px;
+    }
+
+    .single-word {
+        margin: 0 3px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .main-text h2 {
+        font-size: 28px;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .main-text h2 {
+        font-size: 24px;
+        color: #fff;
+    }
+}
